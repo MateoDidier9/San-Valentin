@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Love+Light&display=swap" rel="stylesheet">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Love+Light&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <h1 class="titulo">Hola mi amor :) </h1>
+    <div class="sobre" id="sobre">
+        <div class="fondo"></div>
+        <div class="tapa" id="tapa"></div>
+    </div>
+    <div class="nota" id="nota">
+        <h2>Feliz San Valentín</h2>
+        <p>Dicen que la Mano de Fátima es un símbolo de protección, paz y buena energía. Se dice que resguarda de todo mal y atrae la felicidad a quien la tiene.
+
+            Por eso, hoy te la regalo porque quiero que siempre estés rodeada de amor, cuidado y fortuna. Así como esta mano protege, quiero y deseo que sientas mi amor como una proteccion. Deseo que todo en tu vida sea luz y alegría.
+            
+            Feliz San Valentín, te amo. 💫💖</p>
+        <button onclick="abrirSobre()">Cerrar</button>
+
+    </div>
+    <button onclick="abrirSobre()">Léeme</button>
+
+    <script>
+        function abrirSobre() {
+            document.getElementById("sobre").classList.toggle("abierto");
+            document.getElementById("nota").classList.toggle("mostrar");
+
+        }
+    </script>
+</body>
+</html>

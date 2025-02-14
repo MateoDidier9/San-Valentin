@@ -1,0 +1,104 @@
+body {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #d2d2d2;
+      overflow: hidden;
+  }
+  .sobre {
+      position: relative;
+      width: 200px;
+      height: 120px;
+  }
+  .fondo {
+      width: 100%;
+      height: 100%;
+      background-color: #ff0fd3;
+      position: absolute;
+      z-index: 1;
+      border-radius: 5px;
+      
+  }
+  .tapa {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 70px solid #ffffff;
+      z-index: 2;
+      transition: transform 0.5s;
+      transform-origin: top;
+ 
+  }
+  .nota {
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 80%;
+      background-color: white;
+      top: 100vh;
+      transform: translateY(-50%, 0);
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      z-index: 3;
+      opacity: 1;
+      transition: top 0.5s ease-in-out, opacity 0.5s;
+      display: flex;
+      flex-direction: column;
+  }
+  .abierto .tapa {
+      transform: rotateX(180deg);
+  }
+
+  .mostrar{
+      top: 10vh;
+      opacity: 1;
+
+  }
+
+  p{
+    text-align: center;
+    font-family: "Love Ya Like A Sister", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  h2{
+    font-family: "Love Light", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+  }
+
+  h1{
+    font-family: "Love Ya Like A Sister", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f13ab4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+  }  
+
+  .titulo{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    top: 10px;
+    position: relative;
+    color: #f13ab4;
+  }
